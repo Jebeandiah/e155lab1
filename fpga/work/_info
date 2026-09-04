@@ -1,0 +1,148 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2025.2 2025.05, May 31 2025
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga
+T_opt
+!i145 1
+!i144 0
+!s110 1788495892
+VM=A@^z7G<ijbe:hiV[U?^3
+04 7 4 work lab1_xx fast 0
+=1-546ceb15b64d-6a9a4814-22-5090
+R0
+Z2 !s12f OEM25U3 
+Z3 !s12b OEM100
+Z4 !s124 OEM100
+Z5 !s135 nogc
+Z6 o-quiet -auto_acc_if_foreign -work work -L iCE40UP
+Z7 tCvgOpt 0 defaultOptions 1107585188
+n@_opt
+Z8 OL;O;2025.2;82
+R1
+T_opt1
+!i145 1
+!i144 0
+!s110 1788497115
+V8K`GGMBS>S41^G?LhJR8j3
+04 7 4 work lab1_bl fast 0
+=1-546ceb15b64d-6a9a4cdb-4-4e00
+R0
+R2
+R3
+R4
+R5
+R6
+R7
+n@_opt1
+R8
+vheartbeat
+Z9 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
+Z10 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+Z11 !s110 1788497078
+!i10b 1
+!s100 BOeEDng67omnNM]Y[C[MI3
+IPTeY26I?@gCTcB;@dm97d3
+S1
+R1
+w1788496619
+8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
+!i122 3
+L0 1 17
+Z12 VDg1SIo80bB@j0V0VzS_@n1
+Z13 OL;L;2025.2;82
+r1
+!s85 0
+31
+Z14 !s108 1788497078.000000
+Z15 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv|
+Z16 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv|
+!i113 0
+Z17 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z18 tCvgOpt 0 defaultOptions 1085333592
+vlab1_bl
+R9
+R10
+R11
+!i10b 1
+!s100 T>dGRL3BR^U`_2Ak;]>Cm2
+I@YnT0XQo_=MZ3HA78>DMg2
+S1
+R1
+w1788496680
+8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
+!i122 3
+Z19 L0 3 11
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
+vlab1_xx
+2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
+R10
+!s110 1788495644
+!i10b 1
+!s100 ;a>42M4Y[4:S6km8JXmbf2
+IWma]OBGTlhdhEFU[1RJFh0
+S1
+R1
+w1788494841
+8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
+!i122 2
+R19
+R12
+R13
+r1
+!s85 0
+31
+!s108 1788495644.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv|
+!i113 0
+R17
+R18
+vsevenseg
+R9
+R10
+R11
+!i10b 1
+!s100 dGi_La]_:9N^>=^J?3z^S1
+IViobLm1LXHmAKPKaEzQI41
+S1
+R1
+w1788496683
+8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
+!i122 3
+L0 1 25
+R12
+R13
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 0
+R17
+R18
