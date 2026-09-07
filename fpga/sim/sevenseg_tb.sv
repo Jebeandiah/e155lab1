@@ -6,7 +6,7 @@ module sevenseg_tb();
   logic   [3:0]   s; 
   logic   [6:0]   seg; 
     
-  module dut (
+  sevenseg dut (
         .s(s), .seg(seg)
     );
 
@@ -16,32 +16,112 @@ module sevenseg_tb();
   //end
 
   initial begin
-	s = 4'b0000;                //setup inputs
+	s = 4'h0;                //setup inputs
         #10;                        //wait required time
         assert (seg == 7'b0111111)       //check outputs
             $display("PASSED! seven seg works at time: %0t.", $time);
 	else 
             $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
 
+	s = 4'h1;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b0000110)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+		s = 4'h2;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1011011)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
 
-	
-			0: seg = 7'b0111111;
-			1: seg = 7'b0000110;
-			2: seg = 7'b1011011;
-			3: seg = 7'b1001111;
-			4: seg = 7'b1100110;
-			5: seg = 7'b1101101;
-			6: seg = 7'b1111101;
-			7: seg = 7'b0000111;
-			8: seg = 7'b1111111;
-			9: seg = 7'b1100111;
-			10:seg = 7'b1110111;
-			11:seg = 7'b1111100;
-			12:seg = 7'b0111001;
-			13:seg = 7'b1011110;
-			14:seg = 7'b1111001;
-			15:seg = 7'b1110001;
-			default: seg = 7'b0000000;
+	s = 4'h3;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1001111)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+			
+			s = 4'h4;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1100110)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'h5;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1101101)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 		
+					s = 4'h6;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1111101)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'h7;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b0000111)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 	
+					s = 4'h8;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1111111)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'h9;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1100111)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+								s = 4'ha;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1110111)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'hb;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1111100)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+								s = 4'hc;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b0111001)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'hd;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1011110)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+								s = 4'he;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1111001)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+
+	s = 4'hf;                //setup inputs
+        #10;                        //wait required time
+        assert (seg == 7'b1110001)       //check outputs
+            $display("PASSED! seven seg works at time: %0t.", $time);
+	else 
+            $error("FAILED! SEVEN seg fails at time: %0t.", $time); 
+			
 
    #100 $stop;
   end
