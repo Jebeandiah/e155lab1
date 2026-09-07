@@ -45,7 +45,21 @@ module testbenchtop();
 	 $display("PASSED!  successfully incremented at time: %0t.", $time);
 	else 
             $error("FAILED! not successfully incremented at time: %0t.", $time); 
-	force dut.counter = 25'd19_999_999;
+				force dut.counter = 25'd9_999_998;
+	@(posedge clk);
+	release dut.counter;
+	#1
+		assert(fpga_blink_out == 1'd0)
+	 $display("PASSED! light still off before half max at t: %0t.", $time);
+	else 
+            $error("FAILED! light still on before half max at t: %0t.", $time); 
+				@(posedge clk);
+	#1
+		assert(fpga_blink_out == 1'd1)
+	 $display("PASSED! light on at half max at t: %0t.", $time);
+	else 
+            $error("FAILED! light off at half max at t: %0t.", $time); 
+	force dut.counter = 25'd19_999_998;
 	@(posedge clk);
 	release dut.counter;
 	#1
