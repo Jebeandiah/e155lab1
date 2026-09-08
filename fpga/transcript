@@ -13,31 +13,32 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-vsim work.testbenchtop
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim work.testbenchtop 
-# Start time: 14:39:40 on Sep 07,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# Loading sv_std.std
-# Loading work.testbenchtop(fast)
 vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
 # Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:40:00 on Sep 07,2026
+# Start time: 16:56:19 on Sep 07,2026
 # vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv 
 # ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
 # -- Compiling module testbenchtop
 # 
 # Top level modules:
 # 	testbenchtop
-# End time: 14:40:00 on Sep 07,2026, Elapsed time: 0:00:00
+# End time: 16:56:19 on Sep 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.testbenchtop -voptargs=+acc -L iCE40UP
-# End time: 14:40:25 on Sep 07,2026, Elapsed time: 0:00:45
+vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 16:56:21 on Sep 07,2026
+# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module testbenchtop
+# 
+# Top level modules:
+# 	testbenchtop
+# End time: 16:56:21 on Sep 07,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vsim -gui work.testbenchtop -voptargs=+acc -L iCE40UP
 # ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim work.testbenchtop -voptargs="+acc" -L iCE40UP 
-# Start time: 14:40:25 on Sep 07,2026
+# vsim -gui work.testbenchtop -voptargs="+acc" -L iCE40UP 
+# Start time: 16:56:46 on Sep 07,2026
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
 # ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
@@ -49,15 +50,15 @@ vsim work.testbenchtop -voptargs=+acc -L iCE40UP
 # Loading work.heartbeat(fast)
 # Loading work.sevenseg(fast)
 add wave -position insertpoint  \
+sim:/testbenchtop/led \
 sim:/testbenchtop/led_tracker \
 sim:/testbenchtop/s \
-sim:/testbenchtop/led \
 sim:/testbenchtop/seg
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlftmjbg9g".
+#           Attempting to use alternate WLF file "./wlftya6ssz".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftmjbg9g
+#           Using alternate file: ./wlftya6ssz
 run -all
 # PASSED! leds work at time: 10000.
 # PASSED! leds work at time: 20000.
@@ -81,326 +82,9 @@ run -all
 # PASSED! seven seg works at time: 200000.
 # PASSED! light toggled at time: 416000202000.
 # PASSED! light toggled at time: 624000203000.
-# PASSED! light toggled at time: 832000204000.
-# PASSED! light toggled at time: 1040000205000.
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv(183)
-#    Time: 1040000305 ns  Iteration: 0  Instance: /testbenchtop
-# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv line 183
 # Causality operation skipped due to absence of debug database file
-vsim -voptargs=+acc -L iCE40UP work.heartbeat_tb
-# End time: 14:43:28 on Sep 07,2026, Elapsed time: 0:03:03
-# Errors: 0, Warnings: 3
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc" -L iCE40UP work.heartbeat_tb 
-# Start time: 14:43:28 on Sep 07,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.heartbeat_tb(fast)
-# Loading work.heartbeat(fast)
-add wave -position insertpoint  \
-sim:/heartbeat_tb/clk \
-sim:/heartbeat_tb/reset \
-sim:/heartbeat_tb/enable \
-sim:/heartbeat_tb/fpga_blink_out
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlftwth48n".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwth48n
-run -all
-# PASSED! counter reset initially works at time: 6.
-# ** Error: FAILED! not enable failed to prevent increment at time: 36.
-#    Time: 36 ns  Scope: heartbeat_tb File: C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv Line: 38
-# ** Error: FAILED! not successfully incremented at time: 46.
-#    Time: 46 ns  Scope: heartbeat_tb File: C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv Line: 47
-# ** Error: FAILED! counter did not wrap at max or flash light: 56.
-#    Time: 56 ns  Scope: heartbeat_tb File: C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv Line: 55
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv(58)
-#    Time: 156 ns  Iteration: 0  Instance: /heartbeat_tb
-# Break in Module heartbeat_tb at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv line 58
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:48:57 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module heartbeat
-# -- Compiling module lab1_bl
-# -- Compiling module sevenseg
-# 
-# Top level modules:
-# 	lab1_bl
-# End time: 14:48:57 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:49:11 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module testbenchtop
-# 
-# Top level modules:
-# 	testbenchtop
-# End time: 14:49:12 on Sep 07,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc -L iCE40UP work.heartbeat_tb
-# End time: 14:49:27 on Sep 07,2026, Elapsed time: 0:05:59
-# Errors: 3, Warnings: 3
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc" -L iCE40UP work.heartbeat_tb 
-# Start time: 14:49:27 on Sep 07,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.heartbeat_tb(fast)
-# Loading work.heartbeat(fast)
-add wave -position insertpoint  \
-sim:/heartbeat_tb/clk \
-sim:/heartbeat_tb/enable \
-sim:/heartbeat_tb/fpga_blink_out \
-sim:/heartbeat_tb/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlftax6ck6".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftax6ck6
-run -all
-# PASSED! counter reset initially works at time: 6.
-# PASSED! not enable successfully prevents increment at time: 36.
-# PASSED!  successfully incremented at time: 46.
-# ** Error: FAILED! counter did not wrap at max or flash light: 56.
-#    Time: 56 ns  Scope: heartbeat_tb File: C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv Line: 55
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv(58)
-#    Time: 156 ns  Iteration: 0  Instance: /heartbeat_tb
-# Break in Module heartbeat_tb at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv line 58
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 14:53:35 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module testbenchtop
-# 
-# Top level modules:
-# 	testbenchtop
-# End time: 14:53:35 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc -L iCE40UP work.testbenchtop
-# End time: 14:53:51 on Sep 07,2026, Elapsed time: 0:04:24
-# Errors: 1, Warnings: 3
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc" -L iCE40UP work.testbenchtop 
-# Start time: 14:53:51 on Sep 07,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.testbenchtop(fast)
-# Loading work.heartbeat(fast)
-add wave -position insertpoint  \
-sim:/testbenchtop/clk \
-sim:/testbenchtop/enable \
-sim:/testbenchtop/fpga_blink_out \
-sim:/testbenchtop/reset
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlftynq3xv".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftynq3xv
-run -all
-# PASSED! counter reset initially works at time: 6.
-# PASSED! not enable successfully prevents increment at time: 36.
-# PASSED!  successfully incremented at time: 46.
-# PASSED! light still off before half max at t: 56.
-# PASSED! light on at half max at t: 66.
-# PASSED! counter wrapped at max and flashed light: 76.
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv(72)
-#    Time: 176 ns  Iteration: 0  Instance: /testbenchtop
-# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv line 72
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:01:24 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module testbenchtop
-# 
-# Top level modules:
-# 	testbenchtop
-# End time: 15:01:24 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:01:41 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module heartbeat
-# 
-# Top level modules:
-# 	heartbeat
-# End time: 15:01:41 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:01:44 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module lab1_bl
-# 
-# Top level modules:
-# 	lab1_bl
-# End time: 15:01:44 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 15:01:50 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module testbenchtop
-# 
-# Top level modules:
-# 	testbenchtop
-# End time: 15:01:50 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc -L iCE40UP work.testbenchtop
-# End time: 15:02:02 on Sep 07,2026, Elapsed time: 0:08:11
-# Errors: 0, Warnings: 3
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc" -L iCE40UP work.testbenchtop 
-# Start time: 15:02:02 on Sep 07,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.testbenchtop(fast)
-# Loading work.lab1_bl(fast)
-# Loading iCE40UP.HSOSC(fast)
-# Loading work.heartbeat(fast)
-# Loading work.sevenseg(fast)
-add wave -position insertpoint  \
-sim:/testbenchtop/led \
-sim:/testbenchtop/led_tracker \
-sim:/testbenchtop/s \
-sim:/testbenchtop/seg
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlftsdgyth".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsdgyth
-run -all
-# PASSED! leds work at time: 10000.
-# PASSED! leds work at time: 20000.
-# PASSED! leds work at time: 30000.
-# PASSED! leds work at time: 40000.
-# PASSED! seven seg works at time: 50000.
-# PASSED! seven seg works at time: 60000.
-# PASSED! seven seg works at time: 70000.
-# PASSED! seven seg works at time: 80000.
-# PASSED! seven seg works at time: 90000.
-# PASSED! seven seg works at time: 100000.
-# PASSED! seven seg works at time: 110000.
-# PASSED! seven seg works at time: 120000.
-# PASSED! seven seg works at time: 130000.
-# PASSED! seven seg works at time: 140000.
-# PASSED! seven seg works at time: 150000.
-# PASSED! seven seg works at time: 160000.
-# PASSED! seven seg works at time: 170000.
-# PASSED! seven seg works at time: 180000.
-# PASSED! seven seg works at time: 190000.
-# PASSED! seven seg works at time: 200000.
-# PASSED! light toggled at time: 416000202000.
-# PASSED! light toggled at time: 624000203000.
 # PASSED! light toggled at time: 832000204000.
 # PASSED! light toggled at time: 1040000205000.
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv(183)
+# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv(184)
 #    Time: 1040000305 ns  Iteration: 0  Instance: /testbenchtop
-# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv line 183
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:43:16 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module sevenseg_tb
-# 
-# Top level modules:
-# 	sevenseg_tb
-# End time: 16:43:16 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:43:36 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module heartbeat
-# 
-# Top level modules:
-# 	heartbeat
-# End time: 16:43:36 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:43:46 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module sevenseg
-# 
-# Top level modules:
-# 	sevenseg
-# End time: 16:43:46 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv
-# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
-# Start time: 16:43:53 on Sep 07,2026
-# vlog -reportprogress 300 -work work C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv 
-# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# -- Compiling module sevenseg_tb
-# 
-# Top level modules:
-# 	sevenseg_tb
-# End time: 16:43:53 on Sep 07,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim -voptargs=+acc -L iCE40UP work.sevenseg_tb
-# End time: 16:44:15 on Sep 07,2026, Elapsed time: 1:42:13
-# Errors: 0, Warnings: 3
-# ** Note: (vsim-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# vsim -voptargs="+acc" -L iCE40UP work.sevenseg_tb 
-# Start time: 16:44:15 on Sep 07,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
-# ** Note: (vopt-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading sv_std.std
-# Loading work.sevenseg_tb(fast)
-# Loading work.sevenseg(fast)
-add wave -position insertpoint  \
-sim:/sevenseg_tb/s \
-sim:/sevenseg_tb/seg
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: blertwachara  Hostname: 5FMZ0R3  ProcessID: 19968
-#           Attempting to use alternate WLF file "./wlfte35h17".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfte35h17
-run -all
-# PASSED! seven seg works at time: 10.
-# PASSED! seven seg works at time: 20.
-# PASSED! seven seg works at time: 30.
-# PASSED! seven seg works at time: 40.
-# PASSED! seven seg works at time: 50.
-# PASSED! seven seg works at time: 60.
-# PASSED! seven seg works at time: 70.
-# PASSED! seven seg works at time: 80.
-# PASSED! seven seg works at time: 90.
-# PASSED! seven seg works at time: 100.
-# PASSED! seven seg works at time: 110.
-# PASSED! seven seg works at time: 120.
-# PASSED! seven seg works at time: 130.
-# PASSED! seven seg works at time: 140.
-# PASSED! seven seg works at time: 150.
-# PASSED! seven seg works at time: 160.
-# ** Note: $stop    : C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv(126)
-#    Time: 260 ns  Iteration: 0  Instance: /sevenseg_tb
-# Break in Module sevenseg_tb at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv line 126
+# Break in Module testbenchtop at C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv line 184

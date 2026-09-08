@@ -1,11 +1,9 @@
 m255
 K4
 z2
-Z0 !s12c _opt12
+Z0 !s12c _opt13
 Z1 !s99 nomlopt
-Z2 !s12c _opt13
-R1
-R2
+Z2 !s12c _opt12
 R1
 R0
 R1
@@ -13,11 +11,15 @@ R0
 R1
 R2
 R1
+R2
+R1
 R0
 R1
 R2
 R1
 R0
+R1
+R2
 R1
 Z3 !s12c _opt11
 R1
@@ -183,13 +185,14 @@ R19
 R20
 n@_opt12
 R21
+R13
 T_opt13
 !i145 1
 !i144 0
-!s110 1788818522
-Vb47z1O[fKY591mWSSjIde3
+!s110 1788825407
+VX5iW]E<job3@a_E8n<9jW2
 R14
-=1-546ceb15b64d-6a9f345a-168-4d7c
+=1-546ceb15b64d-6a9f4f3f-1c-26d0
 R1
 R15
 R16
@@ -199,7 +202,6 @@ R19
 R20
 n@_opt13
 R21
-R13
 T_opt2
 !i145 1
 !i144 0
@@ -395,7 +397,7 @@ R22
 IDUaS0C=jYXGdCc9Zn@9FC0
 S1
 R13
-Z27 w1788815729
+w1788815729
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
 !i122 72
@@ -489,23 +491,23 @@ R26
 vtestbenchtop
 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
 R22
-!s110 1788818510
+!s110 1788825381
 !i10b 1
-!s100 ;VR8D6I_L`2A88T9Q08kF2
-IZ;GQfmJ=fS37dke97P1^U1
+!s100 A;KbQdC0Q731nQ8>[WlG^0
+IbZ_>C`XXXMFWbYKzYVfCi0
 S1
 R13
-R27
+w1788825306
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-!i122 73
-L0 4 183
+!i122 79
+L0 4 184
 R23
 R24
 r1
 !s85 0
 31
-!s108 1788818510.000000
+!s108 1788825381.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv|
 !i113 0
