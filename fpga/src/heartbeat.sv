@@ -1,3 +1,9 @@
+//Author: Ben Lertwachara - blertwachara@hmc.edu
+//Date: 9/9/2026
+//Functionality: Uses sequential logic counter 
+//incremented by clk to flash an led every 20_000_000
+//(adjustable) cycles
+
 module heartbeat #(
 parameter MAX_COUNT = 20_000_000,
 parameter COUNTER_WIDTH = 25

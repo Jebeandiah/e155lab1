@@ -1,3 +1,7 @@
+//Author: Ben Lertwachara - blertwachara@hmc.edu
+//Date: 9/9/2026
+//Functionality: Testbench for heartbeat module
+
 `timescale 1 ns/1 ns
 
 

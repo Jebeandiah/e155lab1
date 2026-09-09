@@ -1,4 +1,10 @@
-//Ben Lertwachara  blertwachara@g.hmc.edu uses 7seg modules and heartbeat module and maps lights to dip switches for lab 1
+//Author: Ben Lertwachara - blertwachara@hmc.edu
+//Date: 9/9/2026
+//Functionality: Takes input from onboard dip switches
+// and uses to control on board leds with combinational
+// logic. Also implements heartbeat and seven seg modules, 
+// generating the clock for the heartbeat module
+// and outputting the 7seg signals and flashing led signal
 
 module lab1_bl(
 	input 	logic	[3:0] s,
