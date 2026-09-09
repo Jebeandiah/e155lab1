@@ -41,11 +41,26 @@ module testbenchtop();
 	enable = 1'b1;
 	@(posedge clk);
 	#1
-	assert((dut.counter == 3'd1) && (fpga_blink_out == 1'd0))
+	assert((dut.counter == 3'd1))
 	$display("PASSED!  successfully incremented at time: %0t.", $time);
 	else 
 		$error("FAILED! not successfully incremented at time: %0t.", $time); 
-	force dut.counter = 25'd9_999_998;
+	enable = 1'b0;
+	@(posedge clk);
+	#1
+	assert((dut.counter == 3'd1) && (fpga_blink_out == 1'd0))
+	$display("PASSED!  successfully paused at time: %0t.", $time);
+	else 
+		$error("FAILED! not successfully paused at time: %0t.", $time); 
+	enable = 1'b1;
+	reset = 1'b0;       
+	@(posedge clk);
+	#1
+	assert((dut.counter == 3'd0) && (fpga_blink_out == 1'd0))
+	$display("PASSED!  successfully reset from non zero: %0t.", $time);
+	else 
+		$error("FAILED! did not reset from non zero: %0t.", $time); 
+	force dut.counter = 25'd10_000_000;
 	@(posedge clk);
 	release dut.counter;
 	#1
@@ -59,7 +74,7 @@ module testbenchtop();
 		$display("PASSED! light on at half max at t: %0t.", $time);
 	else 
 		$error("FAILED! light off at half max at t: %0t.", $time); 
-	force dut.counter = 25'd19_999_998;
+	force dut.counter = 25'd20_000_000;
 	@(posedge clk);
 	release dut.counter;
 	#1

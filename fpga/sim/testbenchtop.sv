@@ -148,32 +148,32 @@ module testbenchtop();
 	else 
 		$error("FAILED! SEVEN seg fails at time: %0t.", $time); 
 			
-	#208000001
+	#208333334
 	
 
 	led_tracker = led[2];
-	#208000001  //a little over the period of the flashing to ensure it toggles
+	#208333334  //a little over the period of the flashing to ensure it toggles
 	assert(led_tracker != led[2])
 
 		$display("PASSED! light toggled at time: %0t.", $time);
 	else 
 		$error("FAILED! light not toggled at time: %0t.", $time); 
 	led_tracker = led[2];
-	#208000001  //a little over the period of the flashing to ensure it toggles
+	#208333334  //a little over the period of the flashing to ensure it toggles
 	assert(led_tracker != led[2])
 
 		$display("PASSED! light toggled at time: %0t.", $time);
 	else 
 		$error("FAILED! light not toggled at time: %0t.", $time); 
 	led_tracker = led[2];
-	#208000001  //a little over the period of the flashing to ensure it toggles
+	#208333334  //a little over the period of the flashing to ensure it toggles
 	assert(led_tracker != led[2])
 
 		$display("PASSED! light toggled at time: %0t.", $time);
 	else 
 		$error("FAILED! light not toggled at time: %0t.", $time); 
 	led_tracker = led[2];
-	#208000001  //a little over the period of the flashing to ensure it toggles
+	#208333334  //a little over the period of the flashing to ensure it toggles
 	assert(led_tracker != led[2])
 
 		$display("PASSED! light toggled at time: %0t.", $time);

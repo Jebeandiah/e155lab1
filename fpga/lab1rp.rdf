@@ -3,14 +3,20 @@
     <Options/>
     <Implementation title="impl_1" dir="impl_1" description="impl_1" synthesis="lse" default_strategy="Strategy1">
         <Options def_top="lab1_bl"/>
+        <Source name="src/lab1_bl.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="lab1_bl"/>
+        </Source>
         <Source name="src/heartbeat.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="src/sevenseg.sv" type="Verilog" type_short="Verilog">
             <Options VerilogStandard="System Verilog"/>
         </Source>
-        <Source name="src/lab1_bl.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog" top_module="lab1_bl"/>
+        <Source name="pins.pdc" type="Physical Constraints File" type_short="PDC">
+            <Options/>
+        </Source>
+        <Source name="source/impl_1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
         </Source>
     </Implementation>
     <Strategy name="Strategy1" file="lab1rp1.sty"/>

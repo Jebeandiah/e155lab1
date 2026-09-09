@@ -1,98 +1,6 @@
 m255
 K4
 z2
-Z0 !s12c _opt13
-Z1 !s99 nomlopt
-Z2 !s12c _opt12
-R1
-R0
-R1
-R0
-R1
-R2
-R1
-R2
-R1
-R0
-R1
-R2
-R1
-R0
-R1
-R2
-R1
-Z3 !s12c _opt11
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-R3
-R1
-Z4 !s12c _opt10
-R1
-R4
-R1
-R4
-R1
-!s12c _opt9
-R1
-Z5 !s12c _opt5
-R1
-Z6 !s12c _opt3
-R1
-Z7 !s12c _opt8
-R1
-Z8 !s12c _opt7
-R1
-Z9 !s12c _opt6
-R1
-Z10 !s12c _opt4
-R1
-R6
-R1
-Z11 !s12c _opt2
-R1
-Z12 !s12c _opt
-R1
-R7
-R1
-R8
-R1
-R9
-R1
-R5
-R1
-R10
-R1
-R6
-R1
-R11
-R1
-R11
-R1
-R11
-R1
-R12
-R1
-R11
-R1
-!s12c _opt1
-R1
-R12
-R1
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -100,416 +8,129 @@ R1
 !i10e 25
 !i10f 100
 cModel Technology
-Z13 dC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga
-T_opt
-!i145 1
-!i144 0
-!s110 1788768384
-V9cT_`;k;1X5][5`eOIF4O0
-Z14 04 12 4 work testbenchtop fast 0
-=1-8cf8c5f841de-6a9e707f-361-2b34
-R1
-Z15 !s12f OEM25U4 
-Z16 !s12b OEM100
-Z17 !s124 OEM100
-Z18 !s135 nogc
-Z19 o-quiet -auto_acc_if_foreign -work work -L iCE40UP +acc
-Z20 tCvgOpt 0 defaultOptions 1107585188
-n@_opt
-Z21 OL;O;2025.2;82
-R13
-T_opt1
-!i145 1
-!i144 0
-!s110 1788497115
-V8K`GGMBS>S41^G?LhJR8j3
-04 7 4 work lab1_bl fast 0
-=1-546ceb15b64d-6a9a4cdb-4-4e00
-R1
-!s12f OEM25U3 
-R16
-R17
-R18
-o-quiet -auto_acc_if_foreign -work work -L iCE40UP
-R20
-n@_opt1
-R21
-R13
-T_opt10
-!i145 1
-!i144 0
-!s110 1788775200
-VCbSPJb2:k]8OLgOc[i9iB2
-R14
-=1-8cf8c5f841de-6a9e8b1f-29a-1054
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt10
-R21
-R13
-T_opt11
-!i145 1
-!i144 0
-!s110 1788777743
-VaPfN0nS1oS^GW`bd80jS]0
-R14
-=1-8cf8c5f841de-6a9e950e-379-3480
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt11
-R21
-R13
-T_opt12
-!i145 1
-!i144 0
-!s110 1788824657
-ViL`k4]On=i[1<0023Zg7R0
-04 11 4 work sevenseg_tb fast 0
-=1-546ceb15b64d-6a9f4c50-5d-5e34
-R1
-!s12f OEM25U2 
-R16
-R17
-R18
-R19
-R20
-n@_opt12
-R21
-R13
-T_opt13
-!i145 1
-!i144 0
-!s110 1788825407
-VX5iW]E<job3@a_E8n<9jW2
-R14
-=1-546ceb15b64d-6a9f4f3f-1c-26d0
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt13
-R21
-T_opt2
-!i145 1
-!i144 0
-!s110 1788768636
-VmQ<iW:o`nz;01dI[01RcI3
-R14
-=1-8cf8c5f841de-6a9e717c-1bf-4110
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt2
-R21
-R13
-T_opt3
-!i145 1
-!i144 0
-!s110 1788771246
-VcGeCOGdzOiW`Od8TUb62Q0
-R14
-=1-8cf8c5f841de-6a9e7bae-1b5-3150
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt3
-R21
-R13
-T_opt4
-!i145 1
-!i144 0
-!s110 1788768839
-V:YjbN^WoLzLmZ`iZkdIEg0
-R14
-=1-8cf8c5f841de-6a9e7247-11b-3194
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt4
-R21
-R13
-T_opt5
-!i145 1
-!i144 0
-!s110 1788773160
-Vc[la@`ndFnX^Zl@PFa:>Y0
-R14
-=1-8cf8c5f841de-6a9e8328-e-4c34
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt5
-R21
-R13
-T_opt6
-!i145 1
-!i144 0
-!s110 1788769345
-VUQllCUZZjUVoHZaX`@bNh1
-R14
-=1-8cf8c5f841de-6a9e7441-1cb-3ce4
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt6
-R21
-R13
-T_opt7
-!i145 1
-!i144 0
-!s110 1788770457
-VQi899B^NO1TMjK:f>iVTm1
-R14
-=1-8cf8c5f841de-6a9e7899-29-447c
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt7
-R21
-R13
-T_opt8
-!i145 1
-!i144 0
-!s110 1788770991
-VFbCgCPg7mKeX]``QHoTSl0
-R14
-=1-8cf8c5f841de-6a9e7aaf-ac-4158
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt8
-R21
-R13
-T_opt9
-!i145 1
-!i144 0
-!s110 1788773539
-VM?ZkkEcjbbgmX_Vd[@2d10
-R14
-=1-8cf8c5f841de-6a9e84a2-248-1ce4
-R1
-R15
-R16
-R17
-R18
-R19
-R20
-n@_opt9
-R21
-R13
+Z0 dC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga
 vheartbeat
 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
-Z22 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
-!s110 1788824616
+Z1 DXx6 sv_std 3 std 0 22 @5XbY]_OacJl=`ToSm<M^0
+!s110 1788916090
 !i10b 1
-!s100 AaKj?o]Rei>V1OGgWc[`?3
-ILeiWGb_X2?zCXOP=;bdOh2
+!s100 TKdfA^e^BQCJ3Fe6i_S]62
+Ij[Kn[Mm88PXThXM[GnO6h1
 S1
-R13
-w1788817716
+R0
+w1788914941
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv
-!i122 75
-L0 1 39
-Z23 VDg1SIo80bB@j0V0VzS_@n1
-Z24 OL;L;2025.2;82
+!i122 0
+L0 1 37
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OL;L;2025.2;82
 r1
 !s85 0
 31
-!s108 1788824616.000000
+!s108 1788916090.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/heartbeat.sv|
 !i113 0
-Z25 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-Z26 tCvgOpt 0 defaultOptions 1085333592
-vheartbeat_tb
-2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
-R22
-!s110 1788766805
-!i10b 1
-!s100 :JQ38h^6nV7[j;@48gWW]1
-Ig>?aVzo=6SKN@27d64[OH2
-S1
-R13
-w1788766781
-8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
-FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
-!i122 27
-L0 4 57
-R23
-R24
-r1
-!s85 0
-31
-!s108 1788766805.000000
-!s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv|
-!i113 0
-R25
-R26
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z5 tCvgOpt 0 defaultOptions 1085333592
 vlab1_bl
 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
-R22
-!s110 1788818504
+R1
+!s110 1788916103
 !i10b 1
 !s100 jM<KF^m=CZ9OTLP]I?lP>3
 IDUaS0C=jYXGdCc9Zn@9FC0
 S1
-R13
+R0
 w1788815729
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv
-!i122 72
+!i122 3
 L0 3 13
-R23
-R24
+R2
+R3
 r1
 !s85 0
 31
-!s108 1788818504.000000
+!s108 1788916102.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/lab1_bl.sv|
 !i113 0
-R25
-R26
-vlab1_xx
-2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
-R22
-!s110 1788495644
-!i10b 1
-!s100 ;a>42M4Y[4:S6km8JXmbf2
-IWma]OBGTlhdhEFU[1RJFh0
-S1
-R13
-w1788494841
-8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
-FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv
-!i122 2
-L0 3 11
-R23
-R24
-r1
-!s85 0
-31
-!s108 1788495644.000000
-!s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/top.sv|
-!i113 0
-R25
-R26
+R4
+R5
 vsevenseg
 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
-R22
-!s110 1788824626
+R1
+!s110 1788916099
 !i10b 1
 !s100 ?m5nNa2FhSMR9cD5`G^mC3
 Ih6D>T?^Zl^fBIfl?lj3=<2
 S1
-R13
+R0
 w1788823435
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv
-!i122 76
+!i122 2
 L0 1 25
-R23
-R24
+R2
+R3
 r1
 !s85 0
 31
-!s108 1788824626.000000
+!s108 1788916099.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/src/sevenseg.sv|
 !i113 0
-R25
-R26
+R4
+R5
 vsevenseg_tb
 2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv
-R22
-!s110 1788824633
+R1
+!s110 1788916123
 !i10b 1
 !s100 ?WEIG>77UA5l5<O0_D_OZ1
 I[6lOan[W5C5Y5^Yne=ZkJ2
 S1
-R13
-w1788824585
+R0
+w1788825088
 8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv
 FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv
-!i122 77
+!i122 6
 L0 4 125
-R23
-R24
+R2
+R3
 r1
 !s85 0
 31
-!s108 1788824633.000000
+!s108 1788916122.000000
 !s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv|
 !s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/sevenseg_tb.sv|
 !i113 0
-R25
-R26
+R4
+R5
 vtestbenchtop
-2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-R22
-!s110 1788825381
+2C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
+R1
+!s110 1788916117
 !i10b 1
-!s100 A;KbQdC0Q731nQ8>[WlG^0
-IbZ_>C`XXXMFWbYKzYVfCi0
+!s100 ]5Edan2NmGbOR;>Mn3FFh0
+Ikcg@cG2LDo5JiUUMl^X8d3
 S1
-R13
-w1788825306
-8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv
-!i122 79
-L0 4 184
-R23
-R24
+R0
+w1788915259
+8C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
+FC:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv
+!i122 4
+L0 4 86
+R2
+R3
 r1
 !s85 0
 31
-!s108 1788825381.000000
-!s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv|
-!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/testbenchtop.sv|
+!s108 1788916117.000000
+!s107 C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv|
+!s90 -reportprogress|300|-work|work|C:/Users/blertwachara/Documents/GitHub/e155lab1/fpga/sim/heartbeat_tb.sv|
 !i113 0
-R25
-R26
+R4
+R5

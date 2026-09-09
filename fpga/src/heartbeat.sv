@@ -12,7 +12,7 @@ output logic fpga_blink_out);
 	//HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
 	// Simple clock divider
-	always_ff @(posedge clk or posedge reset or posedge enable)
+	always_ff @(posedge clk)
 	begin
 		if(reset == 0) 
 		begin
