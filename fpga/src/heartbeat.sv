@@ -1,5 +1,5 @@
 module heartbeat #(
-parameter MAX_COUNT = 19_999_998,
+parameter MAX_COUNT = 20_000_000,
 parameter COUNTER_WIDTH = 25
 ) (input logic clk, reset, enable, 
 output logic fpga_blink_out);
@@ -12,7 +12,7 @@ output logic fpga_blink_out);
 	//HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
 	// Simple clock divider
-	always_ff @(posedge clk)
+	always_ff @(posedge clk or posedge reset or posedge enable)
 	begin
 		if(reset == 0) 
 		begin
