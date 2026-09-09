@@ -1,7 +1,7 @@
 `timescale 1 ns/1 ns
 
 
-module testbenchtop();
+module heartbeat_tb();
 
   logic   clk = 1'b0;
   logic reset;
@@ -60,7 +60,9 @@ module testbenchtop();
 	$display("PASSED!  successfully reset from non zero: %0t.", $time);
 	else 
 		$error("FAILED! did not reset from non zero: %0t.", $time); 
-	force dut.counter = 25'd10_000_000;
+	reset = 1'b1;       
+
+	force dut.counter = 25'd9_999_999;
 	@(posedge clk);
 	release dut.counter;
 	#1
